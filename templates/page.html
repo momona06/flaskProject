@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APPS_FLASK</title>
+    <link rel="icon" href="{{ url_for('static', filename='fav.jpeg') }}">
+</head>
+<body>
+    <h1>this is a {{ name }} doc </h1>
+    <ul>
+{% for i in list %}
+<li>{{ i }} th JCH</li>
+{% endfor %}
+</ul>
+
+<h2>
+    <img alt="Avatar" src="{{ url_for('static', filename='img/jch.png') }}">
+
+</h2>
+
+</body>
+</html>
